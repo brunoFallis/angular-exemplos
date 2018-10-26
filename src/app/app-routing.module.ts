@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: 'reactive', 
     loadChildren: '../app/components/reactiveforms/reactive-forms.module#ReactiveFormsModule'
+  },
+  {
+    path: 'tipopessoa',
+    loadChildren: '../app/components/tipopessoa/tipopessoa.module#TipopessoaModule'
   }
 ];
 

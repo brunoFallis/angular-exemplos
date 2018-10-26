@@ -1,0 +1,19 @@
+<table border="1">
+
+  <thead>
+    <th>nome</th>
+    <th>email</th>
+    <th>cpf</th>
+    <th>cep</th>
+    <th>UF</th>
+  </thead>
+
+  <tr *ngFor="let p of pessoas">
+    <td>{{p.nome}}</td>
+    <td>{{p.email}}</td>
+    <td>{{p.cpf}}</td>
+    <td>{{p.enderecoDTO.cep}}</td>
+    <td>{{p.enderecoDTO.uf}}</td>
+  </tr>
+
+</table>
