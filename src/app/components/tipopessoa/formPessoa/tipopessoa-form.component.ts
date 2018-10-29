@@ -35,8 +35,7 @@ export class TipopessoaFormComponent implements OnInit {
 
   onSubmit() {
     this.pessoa = this.personForm.value;
-    console.log(this.pessoa);
-    this.service.inserePessoa(this.pessoa);
+    this.service.inserePessoa(this.pessoa).subscribe();
   }
 
 }
