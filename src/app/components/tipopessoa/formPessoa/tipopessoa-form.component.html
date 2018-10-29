@@ -1,22 +1,49 @@
-<input type="text" placeholder="nome">
+<form [formGroup]="personForm" (ngSubmit)="onSubmit()">
 
-<input type="text" placeholder="email">
+    <div>
+        <input type="text" placeholder="nome" formControlName="nome">
+    </div>
 
-<input type="text" placeholder="cpf">
+    <div>
+        <input type="text" placeholder="email" formControlName="email">
+    </div>
 
-<input type="text" placeholder="cep">
+    <div>
+        <input type="text" placeholder="cpf" formControlName="cpf">
+    </div>
 
-<input type="text" placeholder="logradouro">
+    <div formGroupName = "enderecoDTO">
 
-<input type="text" placeholder="numero">
+        <div>
+            <input type="text" placeholder="cep" formControlName="cep">
+        </div>
 
-<input type="text" placeholder="complemento">
+        <div>
+            <input type="text" placeholder="logradouro" formControlName="logradouro">
+        </div>
 
-<input type="text" placeholder="bairro">
+        <div>
+            <input type="text" placeholder="numero" formControlName="numero">
+        </div>
 
-<input type="text" placeholder="cidade">
+        <div>
+            <input type="text" placeholder="complemento" formControlName="complemento">
+        </div>
 
-<input type="text" placeholder="uf">
+        <div>
+            <input type="text" placeholder="bairro" formControlName="bairro">
+        </div>
 
-<button></button>
+        <div>
+            <input type="text" placeholder="cidade" formControlName="cidade">
+        </div>
 
+        <div>
+            <input type="text" placeholder="uf" formControlName="uf">
+        </div>
+
+    </div>
+
+    <button type="submit">cadastrar</button>
+
+</form>
